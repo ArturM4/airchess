@@ -25,7 +25,7 @@ app.use(express.json())
 app.use('/api/users', usersRouter)
 app.use('/api/login', loginRouter)
 
-app.use(handleError)
+/* app.use(handleError)
 
 app.use(express.static(path.join(__dirname, 'build')));
 app.get('*', (req, res) => {
@@ -63,7 +63,7 @@ io.on("connection", socket => {
 
 
 
-})
+}) */
 
 
 const PORT = process.env.PORT
